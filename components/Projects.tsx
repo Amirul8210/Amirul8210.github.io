@@ -27,8 +27,6 @@ const projects = [
     technologies: ["Python", "Scapy", "FastAPI", "Docker", "ELK Stack"],
     role: "Security & Backend Developer",
     impact: "Successfully detected simulated DDoS and port scanning attacks with 95% accuracy in testing environments.",
-    github: "https://github.com/Amirul8210/sentinel",
-    link: "#",
     icon: <FiShield size={20} className="text-[#ef4444]" />
   },
   {
@@ -40,8 +38,6 @@ const projects = [
     technologies: ["Bash", "Docker", "Kubernetes", "GitHub Actions", "Python"],
     role: "DevOps Engineer",
     impact: "Cut down deployment setup time for new microservices from hours to under 5 minutes.",
-    github: "https://github.com/Amirul8210/kube-deploy",
-    link: "#",
     icon: <FiCode size={20} className="text-accent-secondary" />
   }
 ];
@@ -102,24 +98,28 @@ export default function Projects() {
               </ul>
 
               <div className={`flex items-center gap-4 ${idx % 2 !== 0 ? 'lg:justify-end' : ''}`}>
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-text-secondary hover:text-white transition-colors"
-                  aria-label="GitHub Repository"
-                >
-                  <FiGithub size={24} />
-                </a>
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-text-secondary hover:text-accent-secondary transition-colors"
-                  aria-label="External Link"
-                >
-                  <FiExternalLink size={24} />
-                </a>
+                {project.github && (
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-text-secondary hover:text-white transition-colors"
+                    aria-label="GitHub Repository"
+                  >
+                    <FiGithub size={24} />
+                  </a>
+                )}
+                {project.link && (
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-text-secondary hover:text-accent-secondary transition-colors"
+                    aria-label="External Link"
+                  >
+                    <FiExternalLink size={24} />
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>
