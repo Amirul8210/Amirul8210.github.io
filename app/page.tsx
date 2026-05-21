@@ -16,9 +16,9 @@ export default function Home() {
       <Hero />
       <div className="relative z-10 bg-primary">
         <About />
+        <Education />
         <Skills />
         <Projects />
-        <Education />
         <Awards />
         <ResearchInterests />
         <Contact />

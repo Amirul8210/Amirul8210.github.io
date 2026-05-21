@@ -43,19 +43,6 @@ const projects = [
     github: "https://github.com/Amirul8210/kube-deploy",
     link: "#",
     icon: <FiCode size={20} className="text-accent-secondary" />
-  },
-  {
-    id: "ai-doc-analyzer",
-    title: "NeuroDoc AI",
-    type: "AI Research Project",
-    description: "An intelligent document parsing system that extracts key entities, summarizes long reports, and categorizes documents using fine-tuned transformer models.",
-    problemStatement: "Manual extraction of specific data points from hundreds of research PDFs is extremely time-consuming and error-prone.",
-    technologies: ["Python", "PyTorch", "HuggingFace", "FastAPI", "React"],
-    role: "AI/ML Researcher & API Developer",
-    impact: "Processed 500+ PDFs in under 10 minutes, extracting relevant metadata with an F1 score of 0.89.",
-    github: "https://github.com/Amirul8210/neurodoc-ai",
-    link: "#",
-    icon: <FiCode size={20} className="text-[#10b981]" />
   }
 ];
 
